@@ -1,38 +1,183 @@
 .App {
   text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.header {
+  padding: 2.5em;
+  display: flex;
+  line-height: 3.5em;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .right {
+    margin-left: auto;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    cursor: pointer;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url('datascience.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.about_me {
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+
+  .left {
+    width: 300px;
+    padding: 1em;
+    .title {
+      color: #484848;
+      font-weight: 700;
+      line-height: 1em;
+      margin: 0 0 1em 0;
+      text-transform: uppercase;
+    }
+    .pic {
+      background-image: url('me.jpg');
+      background-size: 300px;
+
+      height: 270px;
+      border: 2px solid;
+      text-shadow: white 0px 0px 2px;
+      font-size: 16px;
+      margin: 1em;
+    }
+    .subtitle {
+      height: 270px;
+      font-size: 1.7em;
+      margin: 1em;
+      color: #aaa;
+      margin: 0 0 1.5em 0;
+      text-transform: uppercase;
+    }
+  }
+
+
+  .description {
+    text-wrap: pretty;
+    text-align: left;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 1em;
+    color: #666;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 2em;
+  }
+}
+
+.all-page-container {
+  height: 100%;
+  max-height: 1000px;
+  overflow: auto;
+}
+
+.project_list {
+  background-color: lightgray;
+  color: black;
+  padding: 1em;
+
+  .project_tile_row {
+    text-align: left;
+
+    display: flex;
+    justify-content: center;
+
+    .project_tile {
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+      background-color: aliceblue;
+      padding: 1em;
+      border-radius: 1em;
+
+      .project_tile_header {
+        color: #484848;
+        font-weight: 700;
+        line-height: 1em;
+        margin: 0 0 1em 0;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: row;
+
+
+        .project_tile_link {
+          margin-left: auto;
+          align-content: center;
+          cursor: pointer;
+        }
+      }
+
+      .project_tile_content {
+        display: flex;
+        gap: 1em;
+
+        .project_tile_pic {
+          min-width: 160px;
+          min-height: 160px;
+          border-radius: 4px;
+          display: block;
+          background-image: url('datascience.jpg');
+          background-repeat: no-repeat;
+          background-position: 50% 0;
+          background-size: cover;
+        }
+
+        .project_tile_copy {
+          display: flex;
+          flex-direction: column;
+          .project_tile_description {
+            max-width: 1000px;
+            line-height: 140%;
+          }
+
+          .project_tile_footer {
+            max-width: 1000px;
+            line-height: 140%;
+            margin-top: auto;
+            line-height: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog_posts {
+  background-color: white;
+  color: black;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  height: 50%;
+  .blog_posts_content {
+    width: 50%;
+    ul {
+      text-align: left;
+    }
   }
 }
