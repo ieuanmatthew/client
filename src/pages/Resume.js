@@ -7,7 +7,7 @@ export default function Resume() {
   return (
     <div className="App">
         <Header></Header>
-        <PDFViwer pdf={'ieuan-israel-resume.pdf'}></PDFViwer>
+        <PDFViwer pdf={'ieuan-israel-resume-update.pdf'}></PDFViwer>
     </div>
   );
 }

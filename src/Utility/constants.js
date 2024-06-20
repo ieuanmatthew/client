@@ -1,7 +1,7 @@
 // Strings for the Home Description Page
-export const ABOUT_P1 = "I am Data Scientist at Ludis Analytics working to solve team's data problems through cutting edge Data Engineering and Data Science Techniques. My aim is to empower team's to harness the full extent of their backlog of data."
-export const ABOUT_P2 = "Before Ludis, I worked as a Systems Engineer for Draper Laboratories where I worked on their Human Landing System (HLS) proposal. I compiled insights from cross functional industry experts into a systems engineering model."
-export const ABOUT_P3 = "Before Draper, I studied Computational Modeling and Data Analytics at Virginia Tech (Go Hokies!). Where I applied data science techniques to my passion, sports! At Virginia Tech, I won the prestigious Society for American Baseball Research Diamond Dollars Case Competition."
+export const ABOUT_P1 = "I am a Data Scientist at Ludis Analytics, working to solve the team's data problems through cutting-edge Data Engineering and Data Science Techniques. My aim is to empower team's to harness the full extent of their backlog of data."
+export const ABOUT_P2 = "Before Ludis, I worked as a Systems Engineer for Draper Laboratories on their Human Landing System (HLS) proposal. I compiled insights from cross-functional industry experts into a systems engineering model."
+export const ABOUT_P3 = "Before Draper, I studied computational modeling and data analytics at Virginia Tech (Go Hokies!), and I applied data science techniques to my passion: sports! I won the prestigious Society for American Baseball Research Diamond Dollars Case Competition at Virginia Tech."
 export const ABOUT_TITLE = "About ME"
 // Strings for the Projects Description Page
 export const PROJECT_TITLE = "Data Science Projects"
